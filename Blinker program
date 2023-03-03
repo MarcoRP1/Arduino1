@@ -1,0 +1,18 @@
+// C++ code
+//
+
+int blinker = 8; 
+int onDelay = 1000; // on time led
+int offDelay = 1000; // off time led
+
+void setup() {
+pinMode(blinker, OUTPUT); // sets the blinker light as an output
+}
+
+void loop() {
+
+  digitalWrite(blinker, 1);
+  delay(1000); // Wait for 1 second before turning off
+  digitalWrite(blinker, 0);
+  delay(1000); // Wait for 1 second before turning back on
+}
