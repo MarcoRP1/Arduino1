@@ -1,0 +1,58 @@
+ 
+int onDelay = 1000; // on time led
+int red = 8;
+int blue = 7;
+int green = 6;
+
+void setup()
+{
+  pinMode(red, OUTPUT);
+  pinMode(blue, OUTPUT);
+  pinMode(green, OUTPUT);
+}
+void loop()
+ 
+  
+{
+  
+  digitalWrite(8, 1);
+  digitalWrite(7, 1);
+  digitalWrite(6, 0);
+  delay (onDelay);
+ 
+  digitalWrite(8, 0);
+  digitalWrite(7, 1);
+  digitalWrite(6, 0);
+  delay (onDelay);
+    
+  digitalWrite(8, 0);
+  digitalWrite(7, 1);
+  digitalWrite(6, 1);
+  delay(onDelay);
+  
+  digitalWrite(8, 0);
+  digitalWrite(7, 0);
+  digitalWrite(6, 1);
+  delay (onDelay);
+ 
+  digitalWrite(8, 1);
+  digitalWrite(7, 0);
+  digitalWrite(6, 1);
+  delay(onDelay);
+  
+  digitalWrite(8, 1);
+  digitalWrite(7, 0);
+  digitalWrite(6, 0);
+  delay (onDelay);
+  
+  digitalWrite(8, 1);
+  digitalWrite(7, 1);
+  digitalWrite(6, 1);
+  delay (onDelay);
+  
+  digitalWrite(8, 0);
+  digitalWrite(7, 0);
+  digitalWrite(6, 0);
+  delay (onDelay);
+  
+}
