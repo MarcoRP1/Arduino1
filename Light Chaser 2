@@ -1,0 +1,55 @@
+
+int timeDelay = 1000; // delay between changes is 1 second long
+int red = 8; // associates pin 8 with the red LED
+int yellow = 7; // associates pin 7 with the yellow LED
+int green = 6; // associates pin 6 with the green LED
+int blue = 5; // associates pin 5 with the blue LED
+
+
+void setup()
+{
+  pinMode(red, OUTPUT); // pins 5 to 8 are wired as outputs
+  pinMode(yellow, OUTPUT);
+  pinMode(green, OUTPUT);
+  pinMode(blue, OUTPUT);
+}
+void loop()
+ 
+{
+  
+  digitalWrite(red, 1); // turn on red when all others are off
+  digitalWrite(yellow, 0);
+  digitalWrite(green, 0);
+  digitalWrite(blue, 0);
+  delay (timeDelay); // 1 second delay
+ 
+  digitalWrite(red, 0);
+  digitalWrite(yellow, 1); // turn on yellow when all others are off
+  digitalWrite(green, 0);
+  digitalWrite(blue, 0);
+  delay (timeDelay); // 1 second delay
+    
+  digitalWrite(red, 0);
+  digitalWrite(yellow, 0);
+  digitalWrite(green, 1); // turn on green when all others are off
+  digitalWrite(blue, 0);
+  delay(timeDelay); // 1 second delay
+  
+  digitalWrite(red, 0);
+  digitalWrite(yellow, 0);
+  digitalWrite(green, 0);
+  digitalWrite(blue, 1); // turn on blue when all others are off
+  delay (timeDelay); // 1 second delay
+
+  digitalWrite(red, 0);
+  digitalWrite(yellow, 0);
+  digitalWrite(green, 1); // turn on green when all others are off
+  digitalWrite(blue, 0);
+  delay(timeDelay); // 1 second delay
+
+  digitalWrite(red, 0);
+  digitalWrite(yellow, 1); // turn on yellow when all others are off
+  digitalWrite(green, 0);
+  digitalWrite(blue, 0);
+  delay (timeDelay); // 1 second delay
+}
