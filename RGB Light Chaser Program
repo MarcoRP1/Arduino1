@@ -1,58 +1,46 @@
- 
-int onDelay = 1000; // on time led
-int red = 8;
-int blue = 7;
-int green = 6;
+int onDelay = 1000; // 1 second delay between changes
+int red = 8; // associates pin 8 with the red pin on the RGB
+int blue = 7; // associates pin 7 with the blue pin on the RGB
+int green = 6; // associates pin 6 with the green pin on the RGB
 
 void setup()
 {
-  pinMode(red, OUTPUT);
+  pinMode(red, OUTPUT); // pins 6 to 8 are wired as outputs
   pinMode(blue, OUTPUT);
   pinMode(green, OUTPUT);
 }
 void loop()
- 
   
 {
   
-  digitalWrite(8, 1);
+  digitalWrite(8, 1); // red + blue = magenta
   digitalWrite(7, 1);
   digitalWrite(6, 0);
-  delay (onDelay);
+  delay (onDelay); // 1 second delay until the next change
  
   digitalWrite(8, 0);
-  digitalWrite(7, 1);
+  digitalWrite(7, 1); // blue
   digitalWrite(6, 0);
-  delay (onDelay);
+  delay (onDelay); // 1 second delay until the next change
     
   digitalWrite(8, 0);
-  digitalWrite(7, 1);
+  digitalWrite(7, 1); // blue + green = turquoise
   digitalWrite(6, 1);
-  delay(onDelay);
+  delay(onDelay); // 1 second delay until the next change
   
   digitalWrite(8, 0);
   digitalWrite(7, 0);
-  digitalWrite(6, 1);
-  delay (onDelay);
+  digitalWrite(6, 1); // green
+  delay (onDelay); // 1 second delay until the next change
  
-  digitalWrite(8, 1);
+  digitalWrite(8, 1); // red + green = yellow
   digitalWrite(7, 0);
   digitalWrite(6, 1);
-  delay(onDelay);
+  delay(onDelay); // 1 second delay until the next change
   
-  digitalWrite(8, 1);
+  digitalWrite(8, 1); // red
   digitalWrite(7, 0);
   digitalWrite(6, 0);
-  delay (onDelay);
-  
-  digitalWrite(8, 1);
-  digitalWrite(7, 1);
-  digitalWrite(6, 1);
-  delay (onDelay);
-  
-  digitalWrite(8, 0);
-  digitalWrite(7, 0);
-  digitalWrite(6, 0);
-  delay (onDelay);
+  delay (onDelay); // 1 second delay until the next change
   
 }
