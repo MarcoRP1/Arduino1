@@ -1,10 +1,11 @@
 void setup() {
-  pinMode(8, INPUT);
-  Serial.begin(9600);
+  pinMode(8, INPUT); // pin 8 becomes an input
+  Serial.begin(9600); // establish a serial communication
 }
 
 void loop() 
 {
-int val = digitalRead(8);
-Serial.println (val);
+int val = digitalRead(8); // the "val" integer holds the digital value 
+Serial.println (val); // print val (0 or 1)
+delay (100) // 0.1 second delay before rereading val
 }
