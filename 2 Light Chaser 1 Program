@@ -1,3 +1,4 @@
+// In this exercise we used a delay sequence to turn on one light at a time to create a light chaser.
 
 int timeDelay = 1000; // delay between changes is 1 second long
 int red = 8; // associates pin 8 with the red LED
