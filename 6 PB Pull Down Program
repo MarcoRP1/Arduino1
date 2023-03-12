@@ -1,6 +1,5 @@
 // This exercise is just like the previous one, except now
-// the serial monitor will display inversed values (0 if 
-// PB is pressed or 1 if PB is not pressed)
+// the serial monitor will display opposite values
 
 void setup() {
   pinMode(8, INPUT); // pin 8 becomes an input
