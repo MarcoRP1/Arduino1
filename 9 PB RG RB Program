@@ -1,0 +1,24 @@
+// The code for this exercise is exactly the same as the previous
+// one, with the exception of the digitalWrites, which differ 
+// depending on the PB value (PB pressed = Magenta, PB unpressed = Yellow)
+
+int red = 8; // associates pin 8 with the red pin on the RGB
+int blue = 7; // associates pin 7 with the blue pin on the RGB
+int green = 6; // associates pin 6 with the green pin on the RGB
+
+void setup() {
+  pinMode(5, INPUT); // pin 5 becomes an input
+  pinMode(red, OUTPUT); // pins 6 to 8 are wired as outputs
+  pinMode(blue, OUTPUT);
+  pinMode(green, OUTPUT);
+  Serial.begin(9600); // establish a serial communication
+}
+
+void loop() 
+{
+int val = digitalRead(5); // the "val" integer holds the digital PB value 
+digitalWrite(red, 1); // the red pin will stay on at all times
+digitalWrite(blue, !val); // the blue pin will turn on when the PB is pressed
+digitalWrite(green, val); // the green pin will turn on when the PB is not pressed
+delay (100); // 0.1 second delay before rereading val
+}
