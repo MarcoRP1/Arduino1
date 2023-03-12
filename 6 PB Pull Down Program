@@ -1,3 +1,7 @@
+// This exercise is just like the previous one, except now
+// the serial monitor will display inversed values (0 if 
+// PB is pressed or 1 if PB is not pressed)
+
 void setup() {
   pinMode(8, INPUT); // pin 8 becomes an input
   Serial.begin(9600); // establish a serial communication
@@ -5,7 +9,9 @@ void setup() {
 
 void loop() 
 {
-int val = !digitalRead(8); // the "val" integer holds the digital value 
-Serial.println (val); // print val (0 or 1)
+int val = digitalRead(8); // the "val" integer holds the digital PB value 
+Serial.print ("PB value = "); // will print the text in between "_"
+Serial.println (val); // print val then skip a line
 delay (100) // 0.1 second delay before rereading val
 }
+
