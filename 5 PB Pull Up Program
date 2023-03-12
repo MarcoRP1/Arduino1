@@ -12,5 +12,5 @@ void loop()
 int val = digitalRead(8); // the "val" integer holds the digital PB value 
 Serial.print ("PB value = "); // will print the text in between "_"
 Serial.println (!val); // print val then skip a line // The "!" prints an inverted value
-delay (100) // 0.1 second delay before rereading val
+delay (100); // 0.1 second delay before rereading val
 }
