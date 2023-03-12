@@ -1,6 +1,7 @@
-// Similar to the last two, this one is also a light chaser, but this time using the RGB LED, which can create a 
-// combination of colours. For this one, I included the mixes of red and blue (magenta), blue and green 
-// (turquoise) and red and green (yellow).
+// Similar to the last two, this one is also a light chaser, but this 
+// time using the RGB LED, which can create a combination of colours. 
+// For this one, I included the mixes of red and blue (magenta), 
+// blue and green (turquoise) and red and green (yellow).
 
 int onDelay = 1000; // 1 second delay between changes
 int red = 8; // associates pin 8 with the red pin on the RGB
