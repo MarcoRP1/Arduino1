@@ -1,5 +1,6 @@
 // This exercise is just like the previous one, except now
-// the serial monitor will display opposite values
+// there is no need for an inverter, the same values will be
+// displayed based on the status
 
 void setup() {
   pinMode(8, INPUT); // pin 8 becomes an input
